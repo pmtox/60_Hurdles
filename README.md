@@ -1,14 +1,17 @@
-# 60_Hurdles
+# 60 Hurdles
 
-This Repository Of Mine Is about the journey of my **Logic Building** 
-like the things: 
-    -Where i struggled.
-    -What i have improved.
-    -What more left.
-I commit that I will follow these **Rules** in these 60 days-
-      -No ctrl+c and ctrl+v.
-      -Logic first with pen paper.
-      -Daily reflections.
+This repository documents my **Logic Building** journey.
 
-**GOAL-**
-    *To train my Thinking so i can code it up on my own.*
+### The Progress Loop
+* **Where I struggled:** Identifying the bottleneck.
+* **What I improved:** My syntax and flow.
+* **What's left:** Optimization.
+
+---
+
+### The Rules
+1. **No Ctrl+C / Ctrl+V** (Write every line).
+2. **Logic First** (Pen and paper).
+3. **Daily Reflections** (Keep the log updated).
+
+> **GOAL:** *To train my thinking so I can code it up on my own.*
