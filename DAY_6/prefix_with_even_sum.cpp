@@ -13,12 +13,10 @@ int main(){
 		sum+= arr[i];
 		if(sum % 2 == 0){
 			is_true = true;
+			cout<<"True";
+			return 0;
 		}
 	}
-	if(is_true){
-		cout<<"True";
-	} else{
 		cout<<"False";
-	}
 	return 0;
 }
