@@ -419,3 +419,111 @@ int main(){
     }
     return 0;
 }
+
+// LARGEST ELEMENT IN AN ARRAY
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n ; cin>>n;
+    int arr[n];
+    for(int i = 0; i < n ; i++){
+        cin>>arr[i];
+    }
+    int maxi = arr[0];
+    for(int i =0 ; i< n ; i++){
+        if(maxi< arr[i]){
+            maxi = arr[i];
+        }
+    }
+    cout<<maxi;
+}
+
+
+// REVERSE AN ARRAY
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n; cin>>n;
+    int arr[n];
+    for(int i =0 ; i< n; i++){
+        cin>>arr[i];
+    }
+    int i = 0; int j= n-1;
+    while(i<j){
+        int k = arr[i];
+        arr[i] = arr[j];
+        arr[j] = k;
+        i++;
+        j--;
+    }
+    for(int i =0; i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+
+// SECOND LARGEST ELEMENT IN AN ARRAY
+
+#include<iostream>
+#include<climits>
+using namespace std;
+int main(){
+    int n; cin>>n;
+    int arr[n];
+    for(int i =0 ; i< n; i++){
+        cin>>arr[i];
+    }
+    if (n < 2) {
+    	cout << "No SECOND LARGEST";
+        return 0;
+    }
+    int maxi = arr[0];
+    int sec_lar = INT_MIN;
+    bool found = false;
+    for(int i =0; i< n ; i++){
+        if(arr[i] > maxi){
+            sec_lar = maxi;
+            maxi = arr[i];
+            found = true;
+        }
+        else if(arr[i] > sec_lar && arr[i]< maxi){
+            sec_lar = arr[i];
+            found = true;
+        }
+    }
+    if(!found){
+        cout<<"NO SECOND LARGEST";
+    }
+    else{
+        cout<<sec_lar;
+    }
+    return 0;
+}
+
+
+// SORTED ARRAY CHECK
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n; cin>>n;
+    int arr[n];
+    for(int i =0; i< n; i++){
+        cin>>arr[i];
+    }
+    bool sorted = true;
+    for(int i=0;i<n-1;i++){
+        if(arr[i] > arr[i+1]){
+            sorted = false;
+            break;
+        }
+    }
+    if(sorted){
+        cout<<"TRUE";
+    }
+    else{
+        cout<<"FALSE";
+    }
+}
