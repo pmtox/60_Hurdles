@@ -113,3 +113,29 @@ public:
         return temp.size();
     }
 };
+
+
+// PREFIX WITH GIVEN SUM FROM START
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n; cin>>n;
+    int arr[n];
+    int target; cin>>target;
+    for(int i =0; i< n ;i++){
+        cin>>arr[i];
+    }
+    bool is_pr = false;
+    int sum =0;
+    for(int i =0; i< n-1 ; i++){
+        sum+=arr[i];
+        if(sum == target){
+            is_pr= true;
+            break;
+        }
+    }
+    if(is_pr) cout<<"TRUE"; 
+    else cout<<"FALSE";
+    return 0;
+}

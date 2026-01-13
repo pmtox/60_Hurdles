@@ -1,3 +1,6 @@
+//THIS IS CORRECT FOR PREFIX SUM FROM START
+
+
 #include<iostream>
 using namespace std;
 int main(){
