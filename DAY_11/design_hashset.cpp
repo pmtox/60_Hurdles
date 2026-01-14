@@ -1,3 +1,5 @@
+// APPROACH - I
+
 class MyHashSet {
 private:
     vector<int> data;
@@ -20,5 +22,27 @@ public:
     
     bool contains(int key) {
         return find(data.begin() , data.end() , key) != data.end();
+    }
+};
+
+
+// APPROACH - I
+
+class MyHashSet {
+private:
+    vector<int> data;
+public:
+    MyHashSet(): data(1000001 , false) {}
+    
+    void add(int key) {
+        data[key] = true;
+    }
+    
+    void remove(int key) {
+        data[key] = false;
+    }
+    
+    bool contains(int key) {
+        return data[key];
     }
 };
