@@ -26,7 +26,7 @@ public:
 };
 
 
-// APPROACH - I
+// APPROACH - II
 
 class MyHashSet {
 private:
