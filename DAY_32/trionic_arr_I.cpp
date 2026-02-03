@@ -3,16 +3,18 @@ public:
     bool isTrionic(vector<int>& nums) {
         int n = nums.size();
         if(n < 4) return false;
-        /* -- WE GOT 0 -> n-1 !! then 
 
-            TRIONIC ARRAY -> 0 < p < q < n-1
+/*  WE GOT 0 -> n-1 !! then 
 
-            according to this question we need 
-            the 0 -> p as strictly increasing
-            then p -> q as strictly decreasing
-            then q -> n-1 as strictly increasing again
+    TRIONIC ARRAY -> 0 < p < q < n-1
 
-        */
+    according to this question we need 
+    the 0 -> p as strictly increasing
+    then p -> q as strictly decreasing
+    then q -> n-1 as strictly increasing again.
+
+*/
+
         for(int y = 1 ; y < n-2 ; y++){
             bool increment1 = true;
             for(int i = 0 ; i< y; i++){
