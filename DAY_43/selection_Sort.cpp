@@ -10,6 +10,7 @@ void slctSort(int arr[] , int n){
         }
         swap(arr[i] , arr[min_idx]);
     }
+    
 }
 void sortedArr(int arr[] , int n){
     for(int i =0 ;i < n ; i++){
