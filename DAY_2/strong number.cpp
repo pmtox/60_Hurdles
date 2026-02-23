@@ -11,7 +11,7 @@ int main(){
     	for(int i = dig ; i >= 1; i--){
         prod*=i;
     	}
-//    	sum = sum + prod;		// Just tested the sum during reading the values due to error;
+    	sum = sum + prod;		// Just tested the sum during reading the values due to error;
     	cout<<sum<<endl;
     	n/=10;
 	}
